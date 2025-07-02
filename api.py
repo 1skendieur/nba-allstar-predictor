@@ -59,7 +59,7 @@ def predict(data: PlayerFeatures):
         prediction = "All-Star" if prob >= 0.5 else "Not All-Star"
 
         return {
-            "all_star_probability": float(round(prob * 100, 2)),  # Преобразуем в обычный float
+            "all_star_probability": float(round(prob * 100, 2)), 
             "prediction": prediction
         }
 
